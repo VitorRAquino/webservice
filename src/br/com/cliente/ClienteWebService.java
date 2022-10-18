@@ -7,9 +7,9 @@ import java.io.IOException;
 public class ClienteWebService {
 
     public static void main(String[] args) throws IOException {
-        String conteudo = Request.Post("http://localhost:8080/alura-servlets-fundamentos-programacao-web-java/empresas")
+        String conteudos = Request.Post("http://localhost:8080/alura-servlets-fundamentos-programacao-web-java/empresas")
                 .addHeader("Accept", "application/json").execute().returnContent().asString();
 
-        System.out.println(conteudo);
+        System.out.println(conteudos);
     }
 }
